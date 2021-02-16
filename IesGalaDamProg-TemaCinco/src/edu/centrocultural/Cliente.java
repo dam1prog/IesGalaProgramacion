@@ -3,7 +3,6 @@ package edu.centrocultural;
  * Cliente para préstamo de materiales
  * @author Rafa
  * @version 1.0
- * 
  */
 public class Cliente {
 	private String dni;
