@@ -72,9 +72,9 @@ public class TestLambda {
 		nuevaLista.forEach(System.out::println);
 	}
 	
-	public Stream<Alumno> mostrarAlumnos(boolean todos) {
+	public Stream<Alumno> mostrarAlumnos(boolean mostrar) {
 		Stream alumnos = this.listaAlumnos.stream();
-		if(todos)
+		if(mostrar)
 			alumnos.forEach(t->System.out.println(t));
 		return alumnos;
 	}
