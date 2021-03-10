@@ -1,4 +1,4 @@
-package edu.lambda;
+package edu.streams;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class TestLambda {
+public class TestStreamsUno {
 	private ArrayList<Alumno> listaAlumnos = new ArrayList<Alumno>();
-	public TestLambda() {
+	public TestStreamsUno() {
 		listaAlumnos.add(new Alumno(1, "Javier Ignacio", "Molina Cano", "Java 8", 7, 28));
 		listaAlumnos.add(new Alumno(2, "Lillian Eugenia", "Gómez Álvarez", "Java 8", 10, 33));
 		listaAlumnos.add(new Alumno(3, "Sixto Naranjoe", "Marín", "Java 8", 8.6, 15));
@@ -26,7 +26,7 @@ public class TestLambda {
 		listaAlumnos.add(new Alumno(15, "Gabriel Jaime", "Jiménez Gómez", "Java Script", 10, 18));
 	}
 	public static void main(String[] args) {
-		TestLambda testLambda = new TestLambda();
+		TestStreamsUno testLambda = new TestStreamsUno();
 		testLambda.mostrarAlumnos(true);
 		//mostrar los alumnos cuyo nombre empiece por G o L
 		testLambda.mostrarAlumnos(false).

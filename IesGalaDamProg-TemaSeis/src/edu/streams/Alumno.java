@@ -1,4 +1,4 @@
-package edu.lambda;
+package edu.streams;
 
 public class Alumno {
 	private int id;
