@@ -1,0 +1,20 @@
+/* Estilo para todos los botones de la aplicación */
+.button { 
+    -fx-font-size: 14px; 
+}
+/* Estilo cuando se posiciona el ratón sobre cualquier botón */
+.button:hover {
+    -fx-font-size: 16px; 
+}
+/* Estilo para botón con ID boton1 */
+#boton1 { 
+    -fx-text-fill: red; 
+}
+/* Estilo para botón con ID boton2 */
+#boton2 { 
+    -fx-text-fill: orange; 
+}
+/* Estilo para botón con ID boton3 */
+#boton3 { 
+    -fx-text-fill: brown; 
+}

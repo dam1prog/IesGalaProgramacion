@@ -1,0 +1,16 @@
+/* Estilo para todos los botones de la aplicación */
+.button { 
+    -fx-font-size: 10px; 
+}
+/* Estilo para botón con ID boton1 */
+#boton1 { 
+    -fx-text-fill: blue; 
+}
+/* Estilo para botón con ID boton2 */
+#boton2 { 
+    -fx-text-fill: blueviolet; 
+}
+/* Estilo para botón con ID boton3 */
+#boton3 { 
+    -fx-text-fill: darkcyan; 
+}
