@@ -71,7 +71,7 @@ public class TestXmlLibros {
 	 */
 	public String recorrerDOMyMostrar(Document doc){
 
-		String datos_nodo[] = null;
+		String datosNodo[] = null;
 		String salida = "";
 		Node node;
 
@@ -86,10 +86,10 @@ public class TestXmlLibros {
 			node = nodeList.item(i);
 			if (node.getNodeType() == Node.ELEMENT_NODE){
 				// Es un nodo libro
-				datos_nodo = procesarLibro(node);
-				salida = salida + "\n " + "Publicado en: " + datos_nodo[0];
-				salida = salida + "\n " + "El autor es: " + datos_nodo[2];
-				salida = salida + "\n " + "El título es: " + datos_nodo[1];
+				datosNodo = procesarLibro(node);
+				salida = salida + "\n " + "Publicado en: " + datosNodo[0];
+				salida = salida + "\n " + "El autor es: " + datosNodo[2];
+				salida = salida + "\n " + "El título es: " + datosNodo[1];
 				salida = salida + "\n --------------------";
 			}
 		}
@@ -136,15 +136,15 @@ public class TestXmlLibros {
 			Node ntitulo = doc.createElement("Titulo");
 
 			// Se crea un nodo tipo texto con el títlo del libro
-			Node ntitulo_text = doc.createTextNode(titulo);
+			Node ntituloText = doc.createTextNode(titulo);
 
 			// Se añade el nodo de texto con el título como hijo del elemento Titulo
-			ntitulo.appendChild(ntitulo_text);
+			ntitulo.appendChild(ntituloText);
 
 			// Se hace lo mismo que con titulo a autor (<Autor>)
 			Node nautor = doc.createElement("Autor");
-			Node nautor_text = doc.createTextNode(autor);
-			nautor.appendChild(nautor_text);
+			Node nautorText = doc.createTextNode(autor);
+			nautor.appendChild(nautorText);
 
 			// Se crea un nodo de tipo elemento (<libro>)
 			Node nlibro = doc.createElement("Libro");
