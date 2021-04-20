@@ -33,6 +33,7 @@ public class TestEventos extends Application{
 		AnchorPane root = FXMLLoader.load(getClass().getResource("/EventoEntrada.fxml"));
 
 		Scene scene = new Scene(root, 300, 275);
+		
 		//se obtiene la referencia al primer botón
 		Button boton1 = (Button)scene.lookup("#boton1");
 		//se crea el método de evento del manejador para el primer botón
@@ -45,16 +46,15 @@ public class TestEventos extends Application{
 				else
 					System.out.println("Has pulsado el botón izquierdo del ratón");
 			}
-		};
-		
+		};		
 		boton1.addEventHandler(MouseEvent.MOUSE_CLICKED, handler1);
+		
 		//se obtiene la referencia al segundo botón
 		Button boton2 = (Button)scene.lookup("#boton2");
 		//se crea el método de evento del manejador para el segundo botón
 		EventHandler<MouseEvent> handler2 = (MouseEvent event) -> {
 			System.out.println("handler2...");
 		};
-
 		boton2.addEventHandler(MouseEvent.MOUSE_CLICKED, handler2);
 
 		//se obtiene las referencia a los componentes del formulario que permiten

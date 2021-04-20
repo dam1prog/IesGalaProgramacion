@@ -48,13 +48,12 @@ public class TestBindingProperties extends Application {
 		//se añaden valores a la lista
 		lvDatos.getItems().addAll(1, 2, 3, 4, 5);
 
-		String txt = "Elemento seleccionado: %d";
-		
 		Label lblSeleccionado = (Label)scene.lookup("#lblSeleccionado");
 		//se enlaza la propiedad que obitiene el elemento seleccionado de la lista
 		//con la propiedad que asigna el valor de texto a la etiqueta
 		lblSeleccionado.textProperty().bind(lvDatos.getSelectionModel()
-				.selectedItemProperty().asString(txt));
+				.selectedItemProperty().asString("Elemento seleccionado: %d"));
+		
 		//se obtienen las referencia a las cajas de texto
 		TextField tfEcho1 = (TextField)scene.lookup("#tfEcho1");
 		TextField tfEcho2 = (TextField)scene.lookup("#tfEcho2");

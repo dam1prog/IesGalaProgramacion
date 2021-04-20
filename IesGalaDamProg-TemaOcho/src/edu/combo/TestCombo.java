@@ -26,14 +26,17 @@ public class TestCombo extends Application{
 		ObservableList<String> items = FXCollections.observableArrayList();
 		//se añaden elementos de tipo cadena
 		items.addAll("item-1", "item-2", "item-3", "item-4", "item-5");
+		
 		//se crea un ComboBox cuyos datos son los de la lista anterior
 		ComboBox<String> cbx = new ComboBox<>(items);
+		
 		//se construye una lista de personas
 		ObservableList<Persona> personas = FXCollections.observableArrayList();
 		//se añaden personas a la lista
 		personas.addAll(new Persona("Félix",20,'H'),new Persona("María",22,'M'));
 		//se añade la lista de personas como datos del combo
 		ComboBox<Persona> cbPersonas = new ComboBox<>(personas);
+		
 		//se crea un contenedor VBox al que se añaden los dos combos
 		VBox vbox = new VBox(cbx,cbPersonas);
 		//se ajusta el ancho, alto, alineación y espaciado
