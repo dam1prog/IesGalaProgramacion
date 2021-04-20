@@ -12,7 +12,6 @@ import javafx.beans.property.StringProperty;
  * Clase de tipo Bean JavaFx. Se usa para instanciarla y mostrar sus propieades
  * @author Rafa
  * @version 1.0
- *
  */
 public class Persona {
 	private final ReadOnlyIntegerWrapper id = new ReadOnlyIntegerWrapper(this, "id", 1);
