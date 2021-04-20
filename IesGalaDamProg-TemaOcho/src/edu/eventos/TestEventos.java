@@ -46,7 +46,7 @@ public class TestEventos extends Application{
 					System.out.println("Has pulsado el botón izquierdo del ratón");
 			}
 		};
-
+		
 		boton1.addEventHandler(MouseEvent.MOUSE_CLICKED, handler1);
 		//se obtiene la referencia al segundo botón
 		Button boton2 = (Button)scene.lookup("#boton2");

@@ -13,7 +13,6 @@ import javafx.stage.Stage;
  * Clase que muestra un ejemplo de uso de un combo, carga de elementos y evento de selección
  * @author Rafa
  * @version 1.0
- *
  */
 public class TestCombo extends Application{
 

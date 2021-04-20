@@ -12,7 +12,6 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    
     public String getNombre() {
 		return nombre;
 	}
@@ -30,19 +29,13 @@ public class Persona {
 		this.edad = edad;
 	}
 
-
-
 	public char getSexo() {
 		return sexo;
 	}
 
-
-
 	public void setSexo(char sexo) {
 		this.sexo = sexo;
 	}
-
-
 
 	@Override
     public String toString() {
