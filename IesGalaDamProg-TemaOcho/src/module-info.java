@@ -1,6 +1,7 @@
 module temaocho {
 	exports edu.estilos.boton;
 	exports edu.eventos;
+	exports edu.binding;
 	requires javafx.graphics;
 	requires javafx.controls;
 	requires javafx.fxml;

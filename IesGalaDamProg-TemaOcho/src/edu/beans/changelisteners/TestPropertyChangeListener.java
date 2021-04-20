@@ -28,6 +28,7 @@ public class TestPropertyChangeListener {
         IntegerProperty age = new SimpleIntegerProperty(100);
         //se añade la clase actual como clase de evento para el cambio de valor
         age.addListener(TestPropertyChangeListener::changed);
+        
         //se realizan cambios de valor en la propiedad
         age.set(101);
         age.set(102);
