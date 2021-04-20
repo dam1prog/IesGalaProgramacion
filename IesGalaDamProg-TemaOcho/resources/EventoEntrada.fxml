@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="204.0" prefWidth="294.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Nombre" />
+                  <TextField fx:id="tfNombre" />
+                  <Label text="Apellidos" />
+                  <TextArea fx:id="taApellidos" prefHeight="200.0" />
+                  <Label text="Clave" />
+                  <PasswordField fx:id="pfClave" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button id="boton1" fx:id="boton1" alignment="CENTER" mnemonicParsing="false" text="Botón 1" />
+                  <Button id="boton2" fx:id="boton2" contentDisplay="CENTER" mnemonicParsing="false" text="Botón 2" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
