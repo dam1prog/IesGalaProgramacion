@@ -1,0 +1,7 @@
+.label {
+    -fx-text-fill: green;
+}
+
+#texto {
+    -fx-text-fill: blue;
+}
